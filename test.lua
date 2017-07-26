@@ -21,7 +21,7 @@ function Child:new (a)
 	self.a = a
 end
 function GrandChild:new (b, a)
-	self.__super.new(self, a)
+	GrandChild.__super.new(self, a)
 	self.b = b
 end
 
@@ -75,7 +75,7 @@ function Meta:new (x, y)
 	self.y = y
 end
 function Meta.__add (self, op)
-	return self.__class(self.x + op.x, self.y + op.y)
+	return Meta(self.x + op.x, self.y + op.y)
 end
 
 local x = 5

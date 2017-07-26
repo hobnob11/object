@@ -20,7 +20,7 @@ assert(a:is(Object)) -- use `is()` method for it
 
 local Foo = Point:extends() -- you can extend whatever class you want
 function Foo:new (str, x, y)
-	self.__super.new(self, x, y) -- call super constructor first
+	Foo.__super.new(self, x, y) -- call super constructor first
 	self.str = str -- do whatever else is left to be done
 end
 
