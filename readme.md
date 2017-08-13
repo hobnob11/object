@@ -2,7 +2,6 @@
 ## Description
 **Object.lua** is a really small lua module used for class creation that supports single-parent inheritance (Java-like) and metamethods. Initially it was created with three different approaches for fun but it eventually matured enough to be used. It was tested and works just fine on Lua 5.1 and up.
 ## Example
-*This is content of `example.lua`.*
 ```lua
 local Object = require "Object"
 
